@@ -5,7 +5,7 @@ import Centered from '@codesandbox/common/lib/components/flex/Centered';
 import SandboxCard from '@codesandbox/common/lib/components/SandboxCard';
 import { sandboxUrl } from '@codesandbox/common/lib/utils/url-generator';
 import Margin from '@codesandbox/common/lib/components/spacing/Margin';
-import getSandboxName from '@codesandbox/common/lib/utils/get-sandbox-name';
+import { getSandboxName } from '@codesandbox/common/lib/utils/get-sandbox-name';
 
 import ResultInfo from '../ResultInfo';
 import { Container } from './elements';
@@ -31,6 +31,7 @@ const Results = () => {
                   id: hit.objectID,
                   alias: hit.alias,
                   git: hit.git,
+                  title: hit.title,
                 }),
                 id: hit.objectID,
               }}
